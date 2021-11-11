@@ -11,5 +11,7 @@ Allows multiplication of several numbers.
 Allows division of several numbers.
 ### Percentage %
 Allows the calculation of percentages.
+## Graphics
+![Calculator example](/img/calc.png)
 
 © 2021 Jasón Mongrillo Díaz. All rights reserved.
