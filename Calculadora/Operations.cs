@@ -14,22 +14,22 @@ namespace Calculadora
         }
         
         #region Operations
-        public float Sum(float n1, float n2)
+        public decimal Sum(decimal n1, decimal n2)
         {
             return n1 + n2;
         }
 
-        public float Rest(float n1, float n2)
+        public decimal Rest(decimal n1, decimal n2)
         {
             return n1 - n2;
         }
 
-        public float Mult(float n1, float n2)
+        public decimal Mult(decimal n1, decimal n2)
         {
             return n1 * n2;
         }
 
-        public float Div(float n1, float n2)
+        public decimal Div(decimal n1, decimal n2)
         {
             return n1 / n2;
         }

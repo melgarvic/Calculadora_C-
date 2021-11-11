@@ -15,8 +15,8 @@ namespace Calculadora
         //int numberExtension = 0;
         //int comma = 3;        
 
-        float number1 = 0;
-        float number2 = 0;
+        decimal number1 = 0;
+        decimal number2 = 0;
 
         string operation;
 
@@ -143,6 +143,7 @@ namespace Calculadora
             number2 = 0;
 
             txtNumberBox.Text = "";
+            lblReference.Text = "";
         }
 
         private void btnCE_Click(object sender, EventArgs e)
@@ -150,11 +151,22 @@ namespace Calculadora
             number2 = 0;
 
             txtNumberBox.Text = "";
+            lblReference.Text = "";
+        }
+
+        private void btnPerCent_Click(object sender, EventArgs e)
+        {
+            number2 = Convert.ToDecimal(txtNumberBox.Text);
+            decimal percent = number2;
+
+            number2 = percent / 100;
+
+            txtNumberBox.Text = number2.ToString();
         }
 
         private void button21_Click(object sender, EventArgs e)
         {
-            number1 = Convert.ToInt32(txtNumberBox.Text);
+            number1 = Convert.ToDecimal(txtNumberBox.Text);
             string reference = txtNumberBox.Text;
 
             txtNumberBox.Text = "";
@@ -165,7 +177,7 @@ namespace Calculadora
 
         private void button13_Click(object sender, EventArgs e)
         {
-            number1 = Convert.ToInt32(txtNumberBox.Text);
+            number1 = Convert.ToDecimal(txtNumberBox.Text);
             string reference = txtNumberBox.Text;
 
             txtNumberBox.Text = "";
@@ -176,7 +188,7 @@ namespace Calculadora
 
         private void button9_Click(object sender, EventArgs e)
         {
-            number1 = Convert.ToInt32(txtNumberBox.Text);
+            number1 = Convert.ToDecimal(txtNumberBox.Text);
             string reference = txtNumberBox.Text;
             
             txtNumberBox.Text = "";
@@ -187,7 +199,7 @@ namespace Calculadora
 
         private void button5_Click(object sender, EventArgs e)
         {
-            number1 = Convert.ToInt32(txtNumberBox.Text);
+            number1 = Convert.ToDecimal(txtNumberBox.Text);
             string reference = txtNumberBox.Text;
 
             txtNumberBox.Text = "";
@@ -199,13 +211,13 @@ namespace Calculadora
         private void btnEqual_Click(object sender, EventArgs e)
         {
             Operations op = new Operations();
-            float result = 0;
+            decimal result = 0;
             string reference = lblReference.Text;
 
             switch (operation)
             {
                 case "+":
-                    number2 = Convert.ToInt32(txtNumberBox.Text);
+                    number2 = Convert.ToDecimal(txtNumberBox.Text);
                     result = op.Sum(number1, number2);
 
                     lblReference.Text = reference + number2 + " = ";
@@ -213,7 +225,7 @@ namespace Calculadora
                     txtNumberBox.Text = result.ToString();
                     break;
                 case "-":
-                    number2 = Convert.ToInt32(txtNumberBox.Text);
+                    number2 = Convert.ToDecimal(txtNumberBox.Text);
                     result = op.Rest(number1, number2);
 
                     lblReference.Text = reference + number2 + " = ";
@@ -221,7 +233,7 @@ namespace Calculadora
                     txtNumberBox.Text = result.ToString();
                     break;
                 case "*":
-                    number2 = Convert.ToInt32(txtNumberBox.Text);
+                    number2 = Convert.ToDecimal(txtNumberBox.Text);
                     result = op.Mult(number1, number2);
 
                     lblReference.Text = reference + number2 + " = ";
@@ -229,7 +241,7 @@ namespace Calculadora
                     txtNumberBox.Text = result.ToString();
                     break;
                 case "/":
-                    number2 = Convert.ToInt32(txtNumberBox.Text);
+                    number2 = Convert.ToDecimal(txtNumberBox.Text);
                     result = op.Div(number1, number2);
 
                     lblReference.Text = reference + number2 + " = ";

@@ -30,7 +30,7 @@ namespace Calculadora
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnPerCent = new System.Windows.Forms.Button();
             this.btnCE = new System.Windows.Forms.Button();
             this.btnC = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -58,11 +58,12 @@ namespace Calculadora
             this.lblReference = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnPerCent
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnPerCent, "btnPerCent");
+            this.btnPerCent.Name = "btnPerCent";
+            this.btnPerCent.UseVisualStyleBackColor = true;
+            this.btnPerCent.Click += new System.EventHandler(this.btnPerCent_Click);
             // 
             // btnCE
             // 
@@ -262,7 +263,7 @@ namespace Calculadora
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btnC);
             this.Controls.Add(this.btnCE);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnPerCent);
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -272,7 +273,7 @@ namespace Calculadora
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnPerCent;
         private System.Windows.Forms.Button btnCE;
         private System.Windows.Forms.Button btnC;
         private System.Windows.Forms.Button button4;
