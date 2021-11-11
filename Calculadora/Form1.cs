@@ -188,9 +188,10 @@ namespace Calculadora
 
         private void btnEqual_Click(object sender, EventArgs e)
         {
-            Calculadora.Operations op = new Calculadora.Operations();
+            Operations op = new Operations();
             float result = 0;
             string reference = lblReference.Text;
+
             switch (operation)
             {
                 case "+":
@@ -202,10 +203,28 @@ namespace Calculadora
                     txtNumberBox.Text = result.ToString();
                     break;
                 case "-":
+                    number2 = Convert.ToInt32(txtNumberBox.Text);
+                    result = op.Rest(number1, number2);
+
+                    lblReference.Text = reference + number2 + " = ";
+
+                    txtNumberBox.Text = result.ToString();
                     break;
                 case "*":
+                    number2 = Convert.ToInt32(txtNumberBox.Text);
+                    result = op.Mult(number1, number2);
+
+                    lblReference.Text = reference + number2 + " = ";
+
+                    txtNumberBox.Text = result.ToString();
                     break;
                 case "/":
+                    number2 = Convert.ToInt32(txtNumberBox.Text);
+                    result = op.Div(number1, number2);
+
+                    lblReference.Text = reference + number2 + " = ";
+
+                    txtNumberBox.Text = result.ToString();
                     break;
                 default:
                     break;
