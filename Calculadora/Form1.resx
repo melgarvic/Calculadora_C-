@@ -143,52 +143,52 @@
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>25</value>
   </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnCE.Location" type="System.Drawing.Point, System.Drawing">
     <value>94, 110</value>
   </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnCE.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 44</value>
   </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnCE.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="button2.Text" xml:space="preserve">
+  <data name="btnCE.Text" xml:space="preserve">
     <value>CE</value>
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
+  <data name="&gt;&gt;btnCE.Name" xml:space="preserve">
+    <value>btnCE</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnCE.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnCE.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnCE.ZOrder" xml:space="preserve">
     <value>24</value>
   </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnC.Location" type="System.Drawing.Point, System.Drawing">
     <value>175, 110</value>
   </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnC.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 44</value>
   </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnC.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="button3.Text" xml:space="preserve">
+  <data name="btnC.Text" xml:space="preserve">
     <value>C</value>
   </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
+  <data name="&gt;&gt;btnC.Name" xml:space="preserve">
+    <value>btnC</value>
   </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnC.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnC.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnC.ZOrder" xml:space="preserve">
     <value>23</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">

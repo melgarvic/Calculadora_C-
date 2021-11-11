@@ -137,9 +137,19 @@ namespace Calculadora
         }
         #endregion
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnC_Click(object sender, EventArgs e)
         {
-            //cleanNumbers();
+            number1 = 0;
+            number2 = 0;
+
+            txtNumberBox.Text = "";
+        }
+
+        private void btnCE_Click(object sender, EventArgs e)
+        {
+            number2 = 0;
+
+            txtNumberBox.Text = "";
         }
 
         private void button21_Click(object sender, EventArgs e)
