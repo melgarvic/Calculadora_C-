@@ -12,6 +12,7 @@ namespace OperationsTest
         {
             decimal result = op.Sum(2, 2);
             Assert.AreEqual(4, result);
+//console prueba
         }
 
         [TestMethod]
